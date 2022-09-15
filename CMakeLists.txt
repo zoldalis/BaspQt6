@@ -54,7 +54,11 @@ qt_internal_sort_module_dependencies("${QT_BUILD_SUBMODULES}" QT_BUILD_SUBMODULE
                                      "${qt_module_dependency_map_prefix}")
 set(FEATURE_opengl_desktop ON)
 
-qt_internal_sort_module_dependencies("${QT_BUILD_SUBMODULES}" QT_BUILD_SUBMODULES)
+#set(CMAKE_AUTOMOC ON)
+#set(AUTOMOC_COMPILER_PREDEFINES ON)
+#set(CMAKE_CXX_COMPILER_PREDEFINES_COMMAND "-b_SECURE_SCL=0;_HAS_ITERATOR_DEBUGGING=0;")
+
+string(APPEND QT_PLATFORM_DEFINITIONS ";_SECURE_SCL=0;_HAS_ITERATOR_DEBUGGING=0")
 
 foreach(module IN LISTS QT_BUILD_SUBMODULES)
     # Check for unmet dependencies

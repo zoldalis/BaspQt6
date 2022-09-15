@@ -52,6 +52,9 @@ set(QT_BUILD_SUBMODULES "${QT_BUILD_SUBMODULES}" CACHE STRING "Submodules to bui
 set(qt_module_dependency_map_prefix "__qt_module_dependencies_")
 qt_internal_sort_module_dependencies("${QT_BUILD_SUBMODULES}" QT_BUILD_SUBMODULES
                                      "${qt_module_dependency_map_prefix}")
+set(FEATURE_opengl_desktop ON)
+
+qt_internal_sort_module_dependencies("${QT_BUILD_SUBMODULES}" QT_BUILD_SUBMODULES)
 
 foreach(module IN LISTS QT_BUILD_SUBMODULES)
     # Check for unmet dependencies

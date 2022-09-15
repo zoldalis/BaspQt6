@@ -52,6 +52,8 @@ if(NOT QT_BUILD_SUBMODULES)
 endif()
 set(QT_BUILD_SUBMODULES "${QT_BUILD_SUBMODULES}" CACHE STRING "Submodules to build")
 
+set(FEATURE_opengl_desktop ON)
+
 qt_internal_sort_module_dependencies("${QT_BUILD_SUBMODULES}" QT_BUILD_SUBMODULES)
 
 foreach(module IN LISTS QT_BUILD_SUBMODULES)

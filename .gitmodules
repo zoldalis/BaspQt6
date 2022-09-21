@@ -19,7 +19,7 @@
 [submodule "qtactiveqt"]
 	depends = qtbase
 	path = qtactiveqt
-	url = ../qtactiveqt.git
+	url = https://github.com/qt/qtactiveqt
 	branch = 6.2.4
 	status = addon
 [submodule "qtmultimedia"]
@@ -33,7 +33,7 @@
 	depends = qtbase
 	recommends = qtdeclarative qtactiveqt
 	path = qttools
-	url = ../qttools.git
+	url = https://github.com/qt/qttools
 	branch = 6.2.4
 	status = essential
 [submodule "qtxmlpatterns"]
@@ -46,7 +46,7 @@
 [submodule "qttranslations"]
 	depends = qttools
 	path = qttranslations
-	url = ../qttranslations.git
+	url = https://github.com/qt/qttranslations
 	branch = 6.2.4
 	status = essential
 	priority = 30

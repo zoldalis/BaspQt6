@@ -19,8 +19,8 @@
 [submodule "qtactiveqt"]
 	depends = qtbase
 	path = qtactiveqt
-	url = ../qtactiveqt.git
-	branch = 5.15.2
+	url = https://github.com/qt/qtactiveqt
+	branch = 6.2.4
 	status = addon
 [submodule "qtscript"]
 	depends = qtbase
@@ -40,8 +40,8 @@
 	depends = qtbase
 	recommends = qtdeclarative qtactiveqt
 	path = qttools
-	url = ../qttools.git
-	branch = 5.15.2
+	url = https://github.com/qt/qttools
+	branch = 6.2.4
 	status = essential
 [submodule "qtxmlpatterns"]
 	depends = qtbase
@@ -53,8 +53,8 @@
 [submodule "qttranslations"]
 	depends = qttools
 	path = qttranslations
-	url = ../qttranslations.git
-	branch = 5.15.2
+	url = https://github.com/qt/qttranslations
+	branch = 6.2.4
 	status = essential
 	priority = 30
 [submodule "qtdoc"]
